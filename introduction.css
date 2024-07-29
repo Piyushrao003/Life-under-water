@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('https://media.istockphoto.com/id/1444101433/photo/flying-drone-over-large-lake-with-view-of-mountain-peaks.jpg?s=612x612&w=0&k=20&c=dwnQotYKTgqowjls7RV_59e2RL5iaJM-JhAgSZ8al4w=') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #008080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.content-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border: 3px solid #008080;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 128, 128, 0.5);
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 10px 0;
+}
