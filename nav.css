@@ -1,8 +1,8 @@
 .navbar {
     overflow: hidden;
     background-color: #333;
+    z-index: 10;
 }
-
 .navbar a, .dropdown .dropbtn {
     float: left;
     font-size: 16px;
@@ -10,18 +10,16 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
 }
-
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #ddd;
     color: black;
 }
-
 .dropdown {
     float: left;
     overflow: hidden;
 }
-
 .dropdown .dropbtn {
     font-size: 16px;
     border: none;
@@ -31,8 +29,8 @@
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    transition: background-color 0.2s, color 0.2s;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -41,7 +39,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
     float: none;
     color: black;
@@ -49,12 +46,24 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    transition: background-color 0.2s, color 0.2s;
 }
-
 .dropdown-content a:hover {
     background-color: #ddd;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
+}
+@media screen and (max-width: 600px) {
+    .navbar a, .dropdown .dropbtn {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content {
+        position: relative;
+    }
+    .dropdown-content a {
+        text-align: left;
+    }
 }
