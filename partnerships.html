@@ -170,7 +170,7 @@
 
         <div class="content-section">
             <h2>Share Your Thoughts</h2>
-            <form action="submit_comment.php" method="post" class="comment-form">
+            <form id="comment-form" class="comment-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -184,5 +184,14 @@
             </form>
         </div>
     </div>
+
+    <script>
+        document.getElementById('comment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your comment, ' + document.getElementById('name').value + '!');
+            // Reset form after submission
+            document.getElementById('comment-form').reset();
+        });
+    </script>
 </body>
 </html>
