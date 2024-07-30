@@ -42,7 +42,8 @@ header {
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
     background-color: #ddd;
     color: black;
 }
@@ -88,7 +89,8 @@ header {
     margin-top: 20px;
 }
 
-.container p, .container ul {
+.container p,
+.container ul {
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -98,11 +100,113 @@ header {
     padding-left: 20px;
 }
 
-footer {
+
+.footer {
     background-color: #008080;
     color: white;
+    padding: 20px 0;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+    margin-bottom: 15px;
+}
+
+.footer-section a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social a {
+    margin: 0 10px;
+    color: #1e90ff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-section .social a:hover {
+    color: #fff;
+}
+
+.footer-section .newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section .newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.footer-section .newsletter button {
+    padding: 10px;
+    background: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.footer-section .newsletter button:hover {
+    background: #333;
+}
+
+.footer-bottom {
     text-align: center;
-    padding: 1rem;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #fff;
 }
