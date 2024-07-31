@@ -172,29 +172,7 @@ header .name h1 {
     margin-left: 0px;
 }
 
-.footer-section ul li {
-    margin-bottom: 10px;
-}
 
-.footer-section ul li a {
-    color: #ddd;
-    text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-section .social a {
-    margin: 0 10px;
-    color: #1e90ff;
-    font-size: 24px;
-    transition: color 0.3s;
-}
-
-.footer-section .social a:hover {
-    color: #fff;
-}
 
 .footer-section .newsletter form {
     display: flex;
@@ -276,33 +254,58 @@ ul {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: #4d4d4d;
     background-color: #fff;
+    overflow: hidden;
+}
+
+.example-1 .icon-content .link img {
+    width: 30px;  /* Adjusted size */
+    height: 30px; /* Adjusted size */
+    object-fit: contain; /* Ensures the image scales correctly */
+    transition: transform 0.3s;
+    border-radius:inherit;
 }
 
 .example-1 .icon-content .link:hover {
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
 
-.example-1 .icon-content .link svg {
-    width: 25px;
-    height: 25px;
+.example-1 .icon-content .link[data-social="spotify"]:hover img {
+    transform: scale(1.1);
 }
 
-.example-1 .icon-content .link[data-social="spotify"]:hover {
-    color: #1db954;
+.example-1 .icon-content .link[data-social="pinterest"]:hover img {
+    transform: scale(1.1);
 }
 
-.example-1 .icon-content .link[data-social="pinterest"]:hover {
-    color: #bd081c;
+.example-1 .icon-content .link[data-social="dribbble"]:hover img {
+    transform: scale(1.1);
 }
 
-.example-1 .icon-content .link[data-social="dribbble"]:hover {
-    color: #ea4c89;
+.example-1 .icon-content .link[data-social="telegram"]:hover img {
+    transform: scale(1.1);
 }
 
-.example-1 .icon-content .link[data-social="telegram"]:hover {
-    color: #0088cc;
+.footer-section ul li {
+    margin-bottom: 10px;
 }
 
-  
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section .social a {
+    margin: 0 10px;
+    color: #1e90ff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-section .social a:hover {
+    color: #fff;
+}

@@ -52,13 +52,13 @@ p {
     box-shadow: 0 0 5px rgba(0, 128, 128, 0.3);
 }
 
-.chemical-image {
-    width: 150px;
+/* .chemical-image {
+     width: 150px;
     height: auto;
     margin-left: 20px;
     border-radius: 8px;
     border: 2px solid #008080;
-}
+} */
 
 .chemical-content {
     flex: 1;
