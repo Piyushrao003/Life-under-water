@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
-    background: url('https://st2.depositphotos.com/1813545/11899/i/450/depositphotos_118995050-stock-photo-fish-shoal-under-water-surface.jpg') no-repeat center center fixed;
+    background: linear-gradient(to top, #000000, #000032);
+
+    /* background: url('https://st2.depositphotos.com/1813545/11899/i/450/depositphotos_118995050-stock-photo-fish-shoal-under-water-surface.jpg') no-repeat center center fixed; */
     background-size: cover;
 }
 
@@ -39,7 +41,7 @@ header .name h1 {
     margin: auto;
     overflow: hidden;
     padding: 20px;
-    background: white;
+    background: rgb(155 206 217);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -47,14 +49,18 @@ header .name h1 {
 }
 
 .container h2 {
-    color: #333;
-    margin-top: 20px;
+    color: rgb(61, 56, 56);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: italic;
+    border-bottom: 3px solid black;
 }
 
 .container p,
 .container ul {
     line-height: 1.6;
     margin-bottom: 20px;
+    color: black;
 }
 
 .container ul {

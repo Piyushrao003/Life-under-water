@@ -1,3 +1,10 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    background: linear-gradient(to top, #000000, #000032);
+}
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -100,6 +107,38 @@ img, .box-image {
 .box-content {
     width: 100%;
     text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: rgb(155 206 217);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.container h2 {
+    color: rgb(61, 56, 56);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-style: italic;
+    border-bottom: 3px solid black;
+}
+
+.container p,
+.container ul {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.container ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 /* Responsive Design */
@@ -311,4 +350,16 @@ ul {
 
 .footer-section .social a:hover {
     color: #fff;
+}
+header .logo img {
+    max-width: 100px;
+    height: auto;
+    margin-left: 30px;
+}
+header .name h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    text-wrap:wrap;
+    color: rgb(27, 27, 55);
+    margin-right: 70px;
 }
