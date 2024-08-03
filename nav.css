@@ -312,3 +312,15 @@ ul {
 .footer-section .social a:hover {
     color: #fff;
 }
+header .logo img {
+    max-width: 100px;
+    height: auto;
+    margin-left: 30px;
+}
+header .name h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    text-wrap:wrap;
+    color: rgb(27, 27, 55);
+    margin-right: 70px;
+}
